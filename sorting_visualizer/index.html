@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+        <div class="controls">
+            <label class="noOfBars" for="num-bars">Number of Bars:</label>
+            <select id="num-bars">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+            </select>
+            <button onclick="generateBars()">Generate New Bars</button>
+            <button onclick="bubbleSort()">Bubble Sort</button>
+            <button onclick="selectionSort()">Selection Sort</button>
+            <button onclick="insertionSort()">Insertion Sort</button>
+          </div>
+          <div id="bar-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
